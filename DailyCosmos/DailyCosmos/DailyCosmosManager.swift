@@ -15,7 +15,10 @@ class DailyCosmosManager: NSObject {
             request.setValue("application/json", forHTTPHeaderField: "Accept")
 
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-                if let jsonData = data {
+                if let error = error {
+                    print(error.localizedDescription)
+                    completion(.failure(error))
+                } else if let jsonData = data {
                     do {
                         let decoder = JSONDecoder()
                         let cosmosData = try decoder.decode(DailyCosmosModel.self, from: jsonData)

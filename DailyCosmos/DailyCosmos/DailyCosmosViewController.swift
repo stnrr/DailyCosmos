@@ -32,7 +32,7 @@ class DailyCosmosViewController: UIViewController {
                 case .success(let model):
                     self.display(model: model)
                 case .failure(let error):
-                    print(error.localizedDescription)
+                    self.showAlertForError(error: error)
                 }
             }
         }
@@ -45,6 +45,19 @@ class DailyCosmosViewController: UIViewController {
             imageView.load(from: imageUrl, contentMode: .scaleAspectFit)
         }
         containerView.isHidden = false
+    }
+    
+    private func showAlertForError(error: Error) {
+        let alert = UIAlertController(title: "",
+                                      message: "We are not connected to the internet, showing you the last image we have.",
+                                      preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: { [unowned self]  _ in
+            if let model = DailyCosmosModel.getCacheCosmosData() {
+                self.display(model: model)
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

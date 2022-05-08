@@ -17,4 +17,21 @@ struct DailyCosmosModel: Codable {
         case imageUrl = "url"
         case imageDescription = "explanation"
     }
+    
+    func storeInCache() {
+        let encoder = JSONEncoder()
+        if let encodedData = try? encoder.encode(self) {
+            UserDefaults.standard.set(encodedData, forKey: "cosmosData")
+        }
+    }
+    
+    static func getCacheCosmosData() -> DailyCosmosModel? {
+        if let encodedData = UserDefaults.standard.object(forKey: "cosmosData") as? Data {
+            let decoder = JSONDecoder()
+            if let model = try? decoder.decode(DailyCosmosModel.self, from: encodedData) {
+                return model
+            }
+        }
+        return nil
+    }
 }
