@@ -16,6 +16,7 @@
 		92DB0A8E2827E93A0000414C /* DailyCosmosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0A8D2827E93A0000414C /* DailyCosmosViewModel.swift */; };
 		92DB0A902827E9DA0000414C /* DailyCosmosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0A8F2827E9DA0000414C /* DailyCosmosModel.swift */; };
 		92DB0A922827EF070000414C /* ComsosImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0A912827EF070000414C /* ComsosImageView.swift */; };
+		92DB0A94282814CF0000414C /* DailyCosmosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0A93282814CF0000414C /* DailyCosmosManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		92DB0A8D2827E93A0000414C /* DailyCosmosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCosmosViewModel.swift; sourceTree = "<group>"; };
 		92DB0A8F2827E9DA0000414C /* DailyCosmosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCosmosModel.swift; sourceTree = "<group>"; };
 		92DB0A912827EF070000414C /* ComsosImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComsosImageView.swift; sourceTree = "<group>"; };
+		92DB0A93282814CF0000414C /* DailyCosmosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCosmosManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			children = (
 				92DB0A792827E4B80000414C /* AppDelegate.swift */,
 				92DB0A7B2827E4B80000414C /* SceneDelegate.swift */,
+				92DB0A93282814CF0000414C /* DailyCosmosManager.swift */,
 				92DB0A7D2827E4B80000414C /* DailyCosmosViewController.swift */,
 				92DB0A8D2827E93A0000414C /* DailyCosmosViewModel.swift */,
 				92DB0A8F2827E9DA0000414C /* DailyCosmosModel.swift */,
@@ -150,6 +153,7 @@
 				92DB0A922827EF070000414C /* ComsosImageView.swift in Sources */,
 				92DB0A8E2827E93A0000414C /* DailyCosmosViewModel.swift in Sources */,
 				92DB0A7E2827E4B80000414C /* DailyCosmosViewController.swift in Sources */,
+				92DB0A94282814CF0000414C /* DailyCosmosManager.swift in Sources */,
 				92DB0A7A2827E4B80000414C /* AppDelegate.swift in Sources */,
 				92DB0A902827E9DA0000414C /* DailyCosmosModel.swift in Sources */,
 				92DB0A7C2827E4B80000414C /* SceneDelegate.swift in Sources */,
