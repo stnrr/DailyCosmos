@@ -9,6 +9,7 @@ import UIKit
 
 class DailyCosmosViewController: UIViewController {
     @IBOutlet private weak var containerView: UIStackView!
+    @IBOutlet private weak var loader: UIActivityIndicatorView!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var imageView: CosmosImageView!
     @IBOutlet private weak var descriptionView: UITextView!
@@ -26,13 +27,19 @@ class DailyCosmosViewController: UIViewController {
     }
     
     private func loadDailyCosmos() {
-        viewModel.getDailyCosmosData {[unowned self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let model):
-                    self.display(model: model)
-                case .failure(let error):
-                    self.showAlertForError(error: error)
+        if let model = DailyCosmosModel.getCacheCosmosData(), model.isTodayData() {
+            self.display(model: model)
+        } else {
+            loader.startAnimating()
+            viewModel.getDailyCosmosData {[unowned self] result in
+                DispatchQueue.main.async {
+                    self.loader.stopAnimating()
+                    switch result {
+                    case .success(let model):
+                        self.display(model: model)
+                    case .failure(let error):
+                        self.showAlertForError(error: error)
+                    }
                 }
             }
         }
