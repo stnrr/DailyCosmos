@@ -15,6 +15,7 @@
 		92DB0A862827E4BC0000414C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DB0A842827E4BC0000414C /* LaunchScreen.storyboard */; };
 		92DB0A8E2827E93A0000414C /* DailyCosmosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0A8D2827E93A0000414C /* DailyCosmosViewModel.swift */; };
 		92DB0A902827E9DA0000414C /* DailyCosmosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0A8F2827E9DA0000414C /* DailyCosmosModel.swift */; };
+		92DB0A922827EF070000414C /* ComsosImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0A912827EF070000414C /* ComsosImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		92DB0A872827E4BC0000414C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92DB0A8D2827E93A0000414C /* DailyCosmosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCosmosViewModel.swift; sourceTree = "<group>"; };
 		92DB0A8F2827E9DA0000414C /* DailyCosmosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCosmosModel.swift; sourceTree = "<group>"; };
+		92DB0A912827EF070000414C /* ComsosImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComsosImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				92DB0A7D2827E4B80000414C /* DailyCosmosViewController.swift */,
 				92DB0A8D2827E93A0000414C /* DailyCosmosViewModel.swift */,
 				92DB0A8F2827E9DA0000414C /* DailyCosmosModel.swift */,
+				92DB0A912827EF070000414C /* ComsosImageView.swift */,
 				92DB0A7F2827E4B80000414C /* Main.storyboard */,
 				92DB0A822827E4BC0000414C /* Assets.xcassets */,
 				92DB0A842827E4BC0000414C /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DB0A922827EF070000414C /* ComsosImageView.swift in Sources */,
 				92DB0A8E2827E93A0000414C /* DailyCosmosViewModel.swift in Sources */,
 				92DB0A7E2827E4B80000414C /* DailyCosmosViewController.swift in Sources */,
 				92DB0A7A2827E4B80000414C /* AppDelegate.swift in Sources */,

@@ -10,7 +10,7 @@ import UIKit
 class DailyCosmosViewController: UIViewController {
     
     @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var imageView: CosmosImageView!
     @IBOutlet private weak var descriptionView: UITextView!
 
     override func viewDidLoad() {
