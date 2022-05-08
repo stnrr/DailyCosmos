@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		92DB0A7A2827E4B80000414C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0A792827E4B80000414C /* AppDelegate.swift */; };
 		92DB0A7C2827E4B80000414C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0A7B2827E4B80000414C /* SceneDelegate.swift */; };
-		92DB0A7E2827E4B80000414C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0A7D2827E4B80000414C /* ViewController.swift */; };
+		92DB0A7E2827E4B80000414C /* DailyCosmosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB0A7D2827E4B80000414C /* DailyCosmosViewController.swift */; };
 		92DB0A812827E4B80000414C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DB0A7F2827E4B80000414C /* Main.storyboard */; };
 		92DB0A832827E4BC0000414C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DB0A822827E4BC0000414C /* Assets.xcassets */; };
 		92DB0A862827E4BC0000414C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DB0A842827E4BC0000414C /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		92DB0A762827E4B80000414C /* DailyCosmos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyCosmos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DB0A792827E4B80000414C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92DB0A7B2827E4B80000414C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92DB0A7D2827E4B80000414C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92DB0A7D2827E4B80000414C /* DailyCosmosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCosmosViewController.swift; sourceTree = "<group>"; };
 		92DB0A802827E4B80000414C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92DB0A822827E4BC0000414C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92DB0A852827E4BC0000414C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				92DB0A792827E4B80000414C /* AppDelegate.swift */,
 				92DB0A7B2827E4B80000414C /* SceneDelegate.swift */,
-				92DB0A7D2827E4B80000414C /* ViewController.swift */,
+				92DB0A7D2827E4B80000414C /* DailyCosmosViewController.swift */,
 				92DB0A7F2827E4B80000414C /* Main.storyboard */,
 				92DB0A822827E4BC0000414C /* Assets.xcassets */,
 				92DB0A842827E4BC0000414C /* LaunchScreen.storyboard */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92DB0A7E2827E4B80000414C /* ViewController.swift in Sources */,
+				92DB0A7E2827E4B80000414C /* DailyCosmosViewController.swift in Sources */,
 				92DB0A7A2827E4B80000414C /* AppDelegate.swift in Sources */,
 				92DB0A7C2827E4B80000414C /* SceneDelegate.swift in Sources */,
 			);
