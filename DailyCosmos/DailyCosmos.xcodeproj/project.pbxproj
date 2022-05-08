@@ -66,17 +66,49 @@
 			children = (
 				92DB0A792827E4B80000414C /* AppDelegate.swift */,
 				92DB0A7B2827E4B80000414C /* SceneDelegate.swift */,
-				92DB0A93282814CF0000414C /* DailyCosmosManager.swift */,
-				92DB0A7D2827E4B80000414C /* DailyCosmosViewController.swift */,
-				92DB0A8D2827E93A0000414C /* DailyCosmosViewModel.swift */,
-				92DB0A8F2827E9DA0000414C /* DailyCosmosModel.swift */,
-				92DB0A912827EF070000414C /* ComsosImageView.swift */,
+				92DB0A9A282823530000414C /* Managers */,
+				92DB0A99282823400000414C /* Models */,
+				92DB0A97282823110000414C /* Views */,
+				92DB0A98282823270000414C /* ViewModels */,
 				92DB0A7F2827E4B80000414C /* Main.storyboard */,
 				92DB0A822827E4BC0000414C /* Assets.xcassets */,
 				92DB0A842827E4BC0000414C /* LaunchScreen.storyboard */,
 				92DB0A872827E4BC0000414C /* Info.plist */,
 			);
 			path = DailyCosmos;
+			sourceTree = "<group>";
+		};
+		92DB0A97282823110000414C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92DB0A7D2827E4B80000414C /* DailyCosmosViewController.swift */,
+				92DB0A912827EF070000414C /* ComsosImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92DB0A98282823270000414C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				92DB0A8D2827E93A0000414C /* DailyCosmosViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		92DB0A99282823400000414C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92DB0A8F2827E9DA0000414C /* DailyCosmosModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92DB0A9A282823530000414C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				92DB0A93282814CF0000414C /* DailyCosmosManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
