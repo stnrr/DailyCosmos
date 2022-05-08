@@ -9,12 +9,9 @@ import Foundation
 import UIKit
 
 class CosmosImageView: UIImageView {
-    var imageUrl: String?
-    
     func load(from imageUrl: String,
               contentMode mode: ContentMode = .scaleAspectFill,
               withPlaceHolder placeHolderImage: UIImage? = nil) {
-        self.imageUrl = imageUrl
         self.image = placeHolderImage
         guard let url = URL(string: imageUrl) else {
             return
@@ -32,14 +29,12 @@ class CosmosImageView: UIImageView {
                 let image = UIImage(data: data)
                 else { return }
             DispatchQueue.main.async {[unowned self] in
-                if let imageUrlUnwrapped = self.imageUrl, imageUrlUnwrapped == url.absoluteString {
-                    self.addAnimatedImage(image: image.withRenderingMode(.alwaysOriginal))
-                }
+                self.addAnimatedImage(image: image.withRenderingMode(.alwaysOriginal))
             }
         }.resume()
     }
     
-    func addAnimatedImage(image: UIImage) {
+    private func addAnimatedImage(image: UIImage) {
         UIView.transition(with: self,
                           duration: 0.5,
                           options: .transitionCrossDissolve,

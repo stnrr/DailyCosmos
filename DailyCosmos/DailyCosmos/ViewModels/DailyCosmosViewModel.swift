@@ -8,7 +8,7 @@
 import Foundation
 
 class DailyCosmosViewModel: NSObject {
-    var manager: DailyCosmosManager = DailyCosmosManager()
+    private var manager: DailyCosmosManager = DailyCosmosManager()
     
     func getDailyCosmosData(completion: @escaping ((Result<DailyCosmosModel, Error>) -> Void)) {
         manager.fetchDailyCosmosData { result in
