@@ -13,7 +13,7 @@ class CosmosImageView: UIImageView {
     
     func load(from imageUrl: String,
               contentMode mode: ContentMode = .scaleAspectFill,
-              withPlaceHolder placeHolderImage: UIImage?) {
+              withPlaceHolder placeHolderImage: UIImage? = nil) {
         self.imageUrl = imageUrl
         self.image = placeHolderImage
         guard let url = URL(string: imageUrl) else {

@@ -11,4 +11,10 @@ struct DailyCosmosModel: Codable {
     var title: String?
     var imageUrl: String?
     var imageDescription: String?
+    
+    private enum CodingKeys : String, CodingKey {
+        case title
+        case imageUrl = "url"
+        case imageDescription = "explanation"
+    }
 }
